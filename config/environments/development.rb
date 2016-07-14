@@ -29,7 +29,7 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.net",
-    port: 587,
+    port: 2525,                                         #CHANGED FROM 587
     domain: Rails.application.secrets.domain_name,
     authentication: "plain",
     user_name: Rails.application.secrets.email_provider_username,
